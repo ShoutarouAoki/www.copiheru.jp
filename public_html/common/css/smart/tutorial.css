@@ -1,0 +1,228 @@
+/**************************************************
+**
+**	TUTORIAL
+**	-----------------------------------------------
+**	チュートリアル用スタイルシート
+**
+***************************************************/
+
+#tutorial-area{
+	background-image: url("/images/smart/background/background-tutorial.png");
+	width: 100%;
+	padding: 0px;
+}
+
+.tutorial-frame{
+	position: relative;
+	background-color: #000000;
+}
+
+#tutorial-image{
+
+}
+
+#tutorial-image img{
+	width: 100%;
+	z-index: 1;
+}
+
+#tutorial-end{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: auto;
+	width: 250px;
+	display: none;
+}
+
+#tutorial-end img{
+	width: 100%;
+}
+
+#skip{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: auto;
+	width: 250px;
+}
+
+#skip img{
+	width: 100%;
+}
+
+#next{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 30px;
+}
+
+#next img{
+	width: 100%;
+}
+
+#previous{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 30px;
+	display: none;
+}
+
+#previous img{
+	width: 100%;
+}
+
+
+/* RESULT */
+#tutorial-result{
+	background-image: url("/images/smart/background/background-tutorial.png");
+	width: 100%;
+	padding: 0px;
+}
+
+#tutorial-result-area{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+#tutorial-result-box{
+	background-image: url(/images/smart/background/background-modal.png);
+	background-repeat: repeat;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	height: 300px;
+	margin: auto;
+	padding-left: 5px;
+	border: 5px solid #FF6699;
+	border-radius: 8px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.tutorial-result-title{
+	padding-bottom: 5px;
+}
+
+.tutorial-result-title img{
+	width: 100%;
+}
+
+#tutorial-result-comment-frame{
+	width: 80%;
+	margin: 0 auto 10px;
+}
+
+#tutorial-result-comment{
+	position: relative;
+	background-color: #FFFFFF;
+	color: #FF3366;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 5px 8px 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	box-shadow: 0 3px 3px #EEEEEE;
+	border: 1px solid #EEEEEE;
+}
+
+#tutorial-result-comment::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -14px;
+	margin: auto;
+	width: 0px;
+	height: 0px;
+	border-right: 5px solid transparent;
+	border-top: 10px solid transparent;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:2;
+}
+
+#tutorial-result-comment::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -15px;
+	margin: auto;
+	width: 0px;
+	height: 0px;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #FFFFFF;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:3;
+}
+
+#tutorial-result-image{
+	width: 80px;
+	margin: 0 auto;
+}
+
+#tutorial-result-image img{
+	width: 100%;
+}
+
+
+
+/**************************************************
+**
+**	fullPage.js 用 上書きスタイル
+**
+***************************************************/
+
+.section {
+
+}
+
+.panel {
+	background-color: rgba(255,255,255,0.8);
+	width: 90%;
+	padding: 10px 10px 0px 10px;
+	margin: 0 auto;
+	/*
+	height: 400px;
+	overflow: hidden;
+	*/
+	box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+
+.fp-controlArrow {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	margin-top: -15px;
+}
+
+
+.fp-controlArrow.fp-prev {
+	left: 3px;
+	background-image: url("/plugins/fullPage-master/images/left-arrow.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.fp-controlArrow.fp-next {
+	right: 3px;
+	background-image: url("/plugins/fullPage-master/images/right-arrow.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}

@@ -1,0 +1,127 @@
+<!--
+
+/*=======================================================
+==
+==	main_left.css
+==	-----------------------------------------------------
+==	leftFrame内コンテンツ用 CSS ファイル
+==
+========================================================*/
+
+
+/***********************************
+**
+**	leftFrame MENU LIST
+**
+***********************************/
+
+#main_second{
+	background-color: #FFFFFF;
+	font-family: "Century Gothic",Verdana,'ヒラギノ角ゴ Pro W3';
+	color: #555555;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+#main_second a{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.second_top{
+	text-align: left;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+.second_bottom{
+	text-align: center;
+}
+
+#menu_list{
+	padding: 8px;
+}
+
+#menu_list a{
+	background-image: url(../../img/list_arrow.gif);
+	background-repeat: no-repeat;
+	height: 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 2px;
+	padding-left: 19px;
+}
+
+/***********************************
+**
+**	MENU LIST LINK STYLE
+**
+***********************************/
+
+/*=== list_menu ===*/
+#menu_list a:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+#menu_list a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+#menu_list a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+#menu_list a:active {
+	color: #666666;
+	text-decoration: none;
+}
+
+
+
+/*=== list_man ===*/
+.list_man a:link {
+	color: #006666;
+	text-decoration: none;
+}
+
+.list_man a:visited {
+	color: #006666;
+	text-decoration: none;
+}
+
+.list_man a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+.list_man a:active {
+	color: #666666;
+	text-decoration: none;
+}
+
+/*=== list_woman ===*/
+.list_woman a:link {
+	color: #FF3366;
+	text-decoration: none;
+}
+
+.list_woman a:visited {
+	color: #FF3366;
+	text-decoration: none;
+}
+
+.list_woman a:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+.list_woman a:active {
+	color: #666666;
+	text-decoration: none;
+}
+
+-->

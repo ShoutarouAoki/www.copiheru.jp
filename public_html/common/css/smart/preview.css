@@ -1,0 +1,24 @@
+
+#header{
+	width: 480px;
+}
+
+#wrapper{
+	width: 480px;
+}
+
+#footer{
+	width: 480px;
+}
+
+#preview-frame {
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	white-space: -moz-pre-wrap; /* Mozilla */
+	word-wrap: break-word;      /* IE 5.5+ */
+	word-break: break-all;
+}
+

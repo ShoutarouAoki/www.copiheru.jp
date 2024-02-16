@@ -1,0 +1,1093 @@
+/**************************************************
+**
+**	MAIL
+**	-----------------------------------------------
+**	返信画面用スタイルシート
+**
+***************************************************/
+
+#mail-detail{
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#character-image{
+	position: relative;
+	display: none;
+}
+
+#animation-display{
+	position: relative;
+	display: block;
+}
+
+#animation-display img{
+	width: 100%;
+}
+
+
+/****************************************
+**
+**	表示 / 縮小
+**
+*****************************************/
+
+#controll-back{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+	display: none;v
+}
+
+#controll-back a img{
+	width: 80px;
+	margin-left: 10px;
+	float: right;
+}
+
+.button-show{
+	display: none;
+}
+
+.button-zoomout{
+	margin-top: 10px;
+	display: none;
+}
+
+
+
+/****************************************
+**
+**	好感度&マニーエリア
+**
+*****************************************/
+/** 好感度 **/
+#favorite-area{
+	position: absolute;
+	width: 60px;
+/*	top: 5px;
+	left: 0;*/
+	text-align: center;
+	/*z-index: 11;*/
+}
+
+#favorite-crown{
+	background-image: url("/images/smart/favorite-level.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 28px;
+	margin: 0 auto 3px;
+	padding-top: 13px;
+}
+
+#favorite-level{
+	color: #FF3366;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center;
+	text-shadow: #FFFFFF 1px 1px 0px, #FFFFFF -1px 1px 0px,
+	#FFFFFF 1px -1px 0px, #FFFFFF -1px -1px 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	line-height: 100%;
+}
+
+#degree-name{
+	color: #FF3366;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center;
+	text-shadow: #FFFFFF 1px 1px 0px, #FFFFFF -1px 1px 0px,
+	#FFFFFF 1px -1px 0px, #FFFFFF -1px -1px 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 100%;
+}
+
+#favorite-gauge{
+	background-image: url("/images/smart/favorite-gauge.png");
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 150px;
+	margin: 0 auto;
+	border: 2px solid #FF6699;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#favorite-gauge-screen{
+	background-image: url("/images/smart/favorite-overlay.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+#favorite-percent{
+	background-image: url("/images/smart/favorite.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 60px;
+	height: 33px;
+	color: #FFFFFF;
+	text-shadow: #FF3366 1px 1px 0px, #FF3366 -1px 1px 0px,
+	#FF3366 1px -1px 0px, #FF3366 -1px -1px 0px;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+/** マニイ **/
+#manii-area{
+	position: absolute;
+	width: 60px;
+/*	top: 5px;
+	left: 0;
+*/
+	text-align: center;
+/*	z-index: 11;*/
+}
+
+#manii-crown{
+	background-image: url("/images/smart/manii-level.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 28px;
+	margin: 0 auto 3px;
+	padding-top: 13px;
+	color: #0099ff;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center;
+	text-shadow: #FFFFFF 1px 1px 0px, #FFFFFF -1px 1px 0px,
+	#FFFFFF 1px -1px 0px, #FFFFFF -1px -1px 0px;
+
+}
+
+#manii-level{
+	color: #0099ff;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center;
+	text-shadow: #FFFFFF 1px 1px 0px, #FFFFFF -1px 1px 0px,
+	#FFFFFF 1px -1px 0px, #FFFFFF -1px -1px 0px;
+	margin: 0px;
+	padding-bottom: 5px;
+	line-height: 100%;
+}
+
+#manii-max{
+	color: #0099ff;
+	font-weight: bold;
+	font-size: 9px;
+	text-align: center;
+	text-shadow: #FFFFFF 1px 1px 0px, #FFFFFF -1px 1px 0px,
+	#FFFFFF 1px -1px 0px, #FFFFFF -1px -1px 0px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 100%;
+}
+
+#manii-gauge{
+	background-image: url("/images/smart/manii-gauge.png");
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 150px;
+	margin: 0 auto;
+	border: 2px solid #0099ff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#manii-gauge-screen{
+	background-image: url("/images/smart/manii-overlay.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+#manii-gauge-flash{
+	background-image: url("/images/smart/manii-flash.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	display:none;
+	-webkit-animation-name:change-character-blink;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:1s;
+	-moz-animation-name:change-character-blink;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-duration:1s;
+	animation-name:change-character-blink;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:1s;
+}
+
+#manii-percent{
+	/*background-image: url("/images/smart/manii.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	*/
+	background-image: url("/images/smart/favorite.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	/*background-color:rgba(240,240,240,0);*/
+	width: 60px;
+	height: 33px;
+	color: #FFFFFF;
+	text-shadow: #0099ff 1px 1px 0px, #0099ff -1px 1px 0px,
+	#0099ff 1px -1px 0px, #0099ff -1px -1px 0px;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: none;
+}
+
+#manii-pay{
+	background-image: url("/images/smart/manii-level.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 28px;
+	color: #FFFFFF;
+	text-shadow: #0099ff 1px 1px 0px, #0099ff -1px 1px 0px,
+	#0099ff 1px -1px 0px, #0099ff -1px -1px 0px;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	margin: 0 auto 3px;
+	padding-top: 13px;
+}
+
+#manii-send-area{
+	background-image: url("/images/smart/manii-level.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 28px;
+	color: #FFFFFF;
+	text-shadow: #0099ff 1px 1px 0px, #0099ff -1px 1px 0px,
+	#0099ff 1px -1px 0px, #0099ff -1px -1px 0px;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	margin: 0 auto 3px;
+	padding-top: 13px;
+}
+
+.manii-over-animation {
+	-webkit-animation-name:change-character-blink;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration:1s;
+	-moz-animation-name:change-character-blink;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-duration:1s;
+	animation-name:change-character-blink;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:1s;
+}
+
+@-webkit-keyframes change-character-blink{
+	from   {opacity:1.0;}
+	20%,to {opacity:0.8;}
+	50%,to {opacity:0.0;}
+	80%,to {opacity:0.8;}
+	99%,to {opacity:1.0;}
+}
+@-moz-keyframes change-character-blink{
+	from   {opacity:1.0;}
+	20%,to {opacity:0.8;}
+	50%,to {opacity:0.0;}
+	80%,to {opacity:0.8;}
+	99%,to {opacity:1.0;}
+}
+@keyframes change-character-blink{
+	from   {opacity:1.0;}
+	20%,to {opacity:0.8;}
+	50%,to {opacity:0.0;}
+	80%,to {opacity:0.8;}
+	99%,to {opacity:1.0;}
+}
+
+/** 好感度＆マニイ **/
+
+#favorite-manii-change{
+	position: absolute;
+	top: 255px;
+	left: 15px;
+	background:rgba(240,240,240,0);
+	/*
+	background-image: url("/images/smart/button/change.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	*/
+	width: 20px;
+	color: #FFFFFF;
+	text-shadow: #0099ff 1px 1px 0px, #0099ff -1px 1px 0px,
+	#0099ff 1px -1px 0px, #0099ff -1px -1px 0px;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	margin: 0 auto 3px;
+	padding-top: 13px;
+	z-index: 20;
+}
+
+.gauge-area-back{
+	top: 15px;
+	left: 10px;
+	z-index: 17;
+	opacity: 0.6;
+}
+
+.gauge-area-front{
+	top: 5px;
+	left: 0px;
+	z-index: 18;
+	opacity: 1;
+}
+
+
+
+/****************************************
+**
+**	投げ銭ボタン
+**
+*****************************************/
+
+#manii-pay-form{
+	position: absolute;
+	top: 200px;
+	left: 100%;
+	background-color: rgb(255, 0, 234);
+	width:240px;
+	height: 60px;
+	/*margin: 0 auto;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: 4px solid rgb(250, 250, 250);
+	-webkit-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	z-index:920;
+}
+#manii-pay-form div{
+
+	height: 60px;
+	line-height: 60px;
+	/*
+	display: table-cell;
+	vertical-align: middle;
+	*/
+}
+
+#manii-pay-form div img{
+	width: 60px;
+}
+
+#manii-pay-form div span img{
+	width: 60px;
+}
+
+#manii-pay-form div a div{
+	width: 60px;
+	background-color: rgba(240,240,240,1);
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: 2px solid rgb(173, 173, 173);
+	-webkit-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+}
+
+#having-manii{
+	color: #eeeeee;
+	font-weight: bold;
+	font-size: 12px;
+	/*text-align: center;*/
+	text-shadow: #0099ff 1px 1px 0px, #0099ff -1px 1px 0px,#0099ff 1px -1px 0px, #0099ff -1px -1px 0px;
+}
+
+
+.manii-pay-form-close{
+	opacity: 0;
+	visibility: hidden;
+	transition: .2s linear;
+	-webkit-transform: translateX(250px);
+	transform: translateX(250px);
+
+}
+
+.manii-pay-form-open {
+	opacity: 1;
+	visibility: visible;
+	transition: .2s linear;
+	-webkit-transform: translateX(-250px);
+	transform: translateX(-250px);
+}
+
+
+/****************************************
+**
+**	メニューバー関係
+**
+*****************************************/
+
+#menu-bar{
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	background-color: rgba(100, 100, 100, 0.5);
+	width:80px;
+	height: 360px;
+	/*margin: 0 auto;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*border: 4px solid rgba(238, 238, 238, 0.5);*/
+	-webkit-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	-moz-border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	border-radius: 30px 30px 30px 30px/30px 30px 30px 30px;
+	z-index:920;
+}
+
+.menu-bar-close{
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s linear;
+	-webkit-transform: translateX(85px);
+	transform: translateX(85px);
+
+}
+
+.menu-bar-open {
+	opacity: 1;
+	visibility: visible;
+	transition: .3s linear;
+	-webkit-transform: translateX(-85px);
+	transform: translateX(-85px);
+}
+
+
+/****************************************
+**
+**	文言エリア
+**
+*****************************************/
+
+#word-area{
+	position: absolute;
+	top: 245px;
+	left: 5px;
+	/*
+	height:285px;
+	bottom: 285px;
+	left: 60px;
+	*/
+}
+
+#word-area div {
+	background: #FF6699;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 5px;
+	padding: 1px 3px 1px 3px;
+	border-radius: 10px;
+	/*opacity:0.9;*/
+}
+
+
+
+/****************************************
+**
+**	メニューエリア
+**
+*****************************************/
+#menu-bar-button{
+	position: absolute;
+	width: 40px;
+	top: 10px;
+	right: 5px;
+	text-align: center;
+	z-index: 900;
+}
+
+#menu-area{
+	position: absolute;
+	width: 70px;
+	top: 10px;
+	right: 5px;
+	text-align: center;
+	z-index: 12;
+}
+
+#menu-area a{
+	display: block;
+	margin-bottom: 5px;
+}
+
+#menu-area img{
+	width: 70px;
+}
+
+#menu-ticket{
+	position: relative;
+	margin-bottom: 0px;
+}
+
+#menu-manii{
+	position: relative;
+	margin-bottom: 0px;
+}
+
+#menu-close{
+	width:40px;
+	position: relative;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#menu-close img{
+	width:40px;
+}
+/*
+.check-point {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 60px;
+    color: #2196F3;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
+    font-weight: bold;
+}
+*/
+
+.check-point {
+    position: absolute;
+    top: 50px;
+    left: 0;
+	background-image: url("/images/smart/background/background-white.png");
+    width: 70px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+	font-weight: bold;
+    text-shadow: -1px -1px #2196F3, 1px -1px #2196F3, -1px 1px #2196F3, 1px 1px #2196F3;
+	padding: 2px 0px 2px 0px;
+	border-radius: 20px;
+}
+
+.check-point-manii
+{
+    position: absolute;
+    top: 50px;
+    left: 0;
+	background-image: url("/images/smart/background/background-white.png");
+    width: 70px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+	font-weight: bold;
+    text-shadow: -1px -1px #2196F3, 1px -1px #2196F3, -1px 1px #2196F3, 1px 1px #2196F3;
+	padding: 2px 0px 2px 0px;
+	border-radius: 20px;
+}
+
+#item-using-check{
+
+}
+
+.item-using-check{
+	background: #FF3366;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	margin: 0 auto;
+	padding: 2px 4px 2px 4px;
+	border-radius: 10px;
+}
+
+.mail-status-check{
+	margin-top: -3px;
+	margin-bottom: 5px;
+}
+
+
+
+/****************************************
+**
+**	非表示 / 拡大ボタン
+**
+*****************************************/
+
+#controll-area{
+	position: absolute;
+	height: 20px;
+	top: 268px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 13;
+}
+
+.controll-button{
+	width: 90%;
+	text-align: right;
+	margin: 0 auto;
+}
+
+.controll-button a img{
+	width: 80px;
+	margin-left: 10px;
+	float: right;
+	z-index: 910;
+}
+
+
+
+/****************************************
+**
+**	メールログ部分
+**
+*****************************************/
+
+#mail-area{
+	position: absolute;
+	top: 290px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0px 0px 15px;
+	z-index: 900;
+}
+
+#mail-frame{
+	background-image: url("/images/smart/background/background-mail.png");
+	background-repeart: repeart;
+	width: 95%;
+	height: 160px;
+	margin: 0 auto 20px;
+	padding-top: 10px;
+	/* border: 1px solid #CCCCCC; */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+
+
+/****************************************
+**
+**	チャット吹き出し
+**
+*****************************************/
+
+/* キャラ */
+.chara-mail{
+	position: relative;
+	background-color: #FFFFFF;
+	width: 80%;
+	left: 15px;
+	color: #FF6699;
+	padding: 5px 5px 8px 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	box-shadow: 0 3px 3px #FFCC99;
+	margin-bottom: 15px;
+	border: 1px solid #CCCCCC;
+	float: left;
+	clear: both;
+}
+
+.chara-mail::before{
+	content: "";
+	position: absolute;
+	left: -16px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-right: 10px solid #CCCCCC;
+	border-top: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:2;
+}
+
+.chara-mail::after{
+	content: "";
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-right: 10px solid #FFFFFF;
+	border-top: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:3;
+}
+
+/* ユーザー */
+.user-mail{
+	position: relative;
+	background-color: #FFFFFF;
+	width: 80%;
+	right: 15px;
+	color: #0099FF;
+	padding: 5px 5px 8px 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	box-shadow: 0 3px 3px #FFCC99;
+	margin-bottom: 15px;
+	border: 1px solid #CCCCCC;
+	float: right;
+	clear: both;
+
+}
+
+.user-mail::before{
+	content: "";
+	position: absolute;
+	right: -16px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-left: 10px solid #CCCCCC;
+	border-top: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:2;
+}
+
+.user-mail::after{
+	content: "";
+	position: absolute;
+	right: -15px;
+	top: 50%;
+	margin-top: -5px;
+	width: 0px;
+	height: 0px;
+	border-left: 10px solid #FFFFFF;
+	border-top: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	z-index:3;
+}
+
+.mail-inner{
+	padding-top: 5px;
+	clear: both;
+}
+
+.mail-inner img{
+	vertical-align: middle;
+}
+
+.mail-point{
+	color: #FF3366;
+}
+
+.image-read{
+	padding-top: 5px;
+	clear: both;
+}
+
+.image-unread{
+	padding-top: 5px;
+	clear: both;
+}
+
+.display-read{
+	color: #000000;
+}
+
+#more-read{
+	width: 250px;
+	margin: 0 auto;
+}
+
+#more-button img{
+	width: 100%;
+}
+
+
+
+/****************************************
+**
+**	メールフォーム
+**
+*****************************************/
+
+#mail-form{
+	/*background-image: url(/images/smart/background/background-form.png);*/
+	background-color: rgba(139,114,216,0.5);
+	/*background-repeart: repeart;*/
+	width: 95%;
+	margin: 0 auto 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* border: 1px solid #CCCCCC; */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#message-area{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#message-area input[type="text"]{
+	width: 70%;
+	float: left;
+}
+
+#button-send{
+	background-image: url(/images/smart/button/button-send.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 0;
+	width: 80px;
+	height: 30px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	border: none;
+    display: block;
+	float: left;
+	border: 1px soild #000000;
+}
+
+.length-area{
+	background-color: #FFFFFF;
+	font-size: 10px;
+	color: #555555;
+	margin-top: 5px;
+	padding: 2px 6px 2px 6px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+/**************************************
+**
+**	DIALOG
+**
+**************************************/
+
+#dialog-ticket{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-item-confirm{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-item-use{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-favorite{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-manii{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-present{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 999;
+}
+
+#dialog-rewards{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 998;
+}
+
+#dialog-mail-presents{
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	display: none;
+	z-index: 1000;
+}
+
+.confirm-check{
+	font-size: 11px;
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 3px;
+	float: right;
+}
+
+
+
+/****************************************
+**
+**	アイテムボックス
+**
+*****************************************/
+
+/* Android用 */
+#item-box{
+	display: none;
+}
+
+#item-use{
+
+}
+
+/* Android用 */
+#menu-box{
+	display: none;
+}
+
+#menu-list{
+
+}
+
+/* Android用 */
+#ticket-box{
+	display: none;
+}
+
+#ticket-area{
+
+}
+
+
+/* 共通 */
+.item-list-using img{
+	filter:alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.item-list-nouse img{
+	filter:alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.item-name{
+	display: none;
+}
+
+.item-description{
+	display: none;
+}
+
+.item-using{
+	position: absolute;
+	top: 16px;
+	background-color: #FF9900;
+	width: 80%;
+	height: auto;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	line-height: 120%;
+	padding: 5px;
+	border-radius: 10px;
+	filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.item-nouse{
+	position: absolute;
+	top: 13px;
+	background-color: #000000;
+	width: 80%;
+	height: auto;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	line-height: 120%;
+	padding: 5px;
+	border-radius: 10px;
+	filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.item-limit-area{
+	background-color: #FFFFFF;
+	width: 80%;
+	text-align: center;
+	font-size: 10px;
+	line-height: 120%;
+	margin: 2px auto;
+	padding: 5px;
+	border-radius: 10px;
+	display: none;
+}
+
+.limit-count{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.style-item-using{
+	color: #FF6699;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/****************************************
+**
+**	WebGL-Canvas（Phaser-3.9.0）
+**
+*****************************************/
+#over-screen {
+    position: absolute;
+    left:0px;
+    top:0px;
+    opacity: 1;
+    width:100%;
+    height:100%;
+};

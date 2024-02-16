@@ -1,0 +1,256 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #111111;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 10px;
+	margin: 0;
+	background: #000000;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background: #FF3366;
+}
+
+.cbp-spmenu a:active {
+	background: #FF5588;
+	color: #FFFFFF;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+/* 1メニューで+40px */
+.cbp-spmenu-vertical {
+	width: 220px;
+	/* height: 100%; */
+	top: 50px;
+	height: 410px;
+	z-index: 1000;
+	filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.cbp-spmenu-vertical a {
+	border-left: 1px solid #222222;
+	border-bottom: 1px solid #222222;
+	padding: 8px;
+	float: left;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+# SINGLE
+.slide-single{
+	width: 100%;
+}
+
+.slide-single a{
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid #222222;
+	clear: both;
+	float: none;
+}
+
+# SINGLE
+.slide-single-short{
+	width: 100%;
+}
+
+.slide-single-short a{
+	padding: 10px;
+	border: none;
+	border-bottom: 1px dotted #FFFFFF;
+	clear: both;
+	float: none;
+}
+
+.slide-none{
+	width: 85%;
+	color: #999999;
+	text-align:center;
+	margin: 15px auto 0px;
+	padding: 5px;
+	border: 1px solid #FFFFFF;
+}
+
+.slide-all a{
+	width: 100%;
+	text-align:center;
+	border-bottom: 1px solid #FFFFFF;
+	clear: both;
+}
+
+.slide-close{
+	width: 120px;
+	margin: 0px auto;
+}
+
+.slide-close a{
+	background-color: #222222;
+	width: 100%;
+	font-size: 13px;
+	text-align:center;
+	margin-top: 15px;
+	border: 2px solid #555555;
+	border-radius: 3px;
+	clear: both;
+}
+
+.navClose{
+	width: 20px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	border: 0px;
+}
+
+.navClose a{
+	width: 20px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	float: right;
+}
+
+.navClose a img{
+	width: 20px;
+	height: 20px;
+	margin: none;
+	padding: none;
+	border: 0px;
+}

@@ -1,0 +1,37 @@
+2016/05/24 11:23:09	/index.php	[Oauth body ] : データ実際はjson_encodeした配列データ
+2016/05/24 11:23:09	/index.php	[Oauth base_string ] : POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&oauth_consumer_key%3D%26oauth_nonce%3D%26oauth_signature_method%3D%26oauth_timestamp%3D%26oauth_token%3D%26oauth_version%3D%26xoauth_requestor_id%3D3962
+2016/05/24 11:23:09	/index.php	[Oauth consumer ] : keyOauth Object
+(
+    [key] => ef2fb22e423fef126043685ad41e49
+    [secret] => 7d30992241
+)
+
+2016/05/24 11:23:09	/index.php	[Oauth token ] : 
+2016/05/24 11:23:09	/index.php	[Oauth Key ] : 7d30992241&
+2016/05/24 11:23:09	/index.php	[Oauth Create Signature ] : qrHwufcZVDtYTjyQ0rS40zN52X8=
+2016/05/24 11:23:09	/index.php	[Exec Curl ] : OauthRequest Object
+(
+    [param:protected] => Array
+        (
+            [oauth_consumer_key] => 
+            [oauth_nonce] => 
+            [oauth_timestamp] => 
+            [oauth_signature_method] => 
+            [oauth_version] => 
+            [oauth_token] => 
+            [xoauth_requestor_id] => 3962
+            [oauth_signature] => qrHwufcZVDtYTjyQ0rS40zN52X8=
+        )
+
+    [method:protected] => POST
+    [url:protected] => http[s]://spapi.nijiyome.jp/spapi/rest/people
+    [body:protected] => データ実際はjson_encodeした配列データ
+    [base_string] => POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&oauth_consumer_key%3D%26oauth_nonce%3D%26oauth_signature_method%3D%26oauth_timestamp%3D%26oauth_token%3D%26oauth_version%3D%26xoauth_requestor_id%3D3962
+)
+
+2016/05/24 11:23:09	/index.php	[Chack auth_header ] : Array
+(
+    [0] => Authorization: OAuth , oauth_consumer_key="", oauth_nonce="", oauth_timestamp="", oauth_signature_method="", oauth_version="", oauth_token="", xoauth_requestor_id="3962", oauth_signature="qrHwufcZVDtYTjyQ0rS40zN52X8="
+    [1] => Content-Type: application/json
+)
+

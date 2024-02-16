@@ -1,0 +1,71 @@
+/*----------------------------------------------------
+|
+|	DEBUG
+|	--------------------------------------------------
+|	SYSTEM用 DEBUG CSS
+|	--------------------------------------------------
+|	AUTHOR	: MAG SYSTEM
+|
+-----------------------------------------------------*/
+
+/***********************************
+**
+**	DEBUG
+**
+***********************************/
+
+.system_debug{
+	background-color: #000000;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,Verdana,'ＭＳ Ｐゴシック',sans-serif;
+	color: #FFFFFF;
+	padding: 15px;
+	clear: both;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+.system_debug_title{
+	background-color: #222222;
+	width: 95%;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+	border-top: 1px solid #333333;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+.system_debug_contents{
+	width: 95%;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #333333;
+	line-height: 170%;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+.query_line{
+	height: 0px;
+	margin-top: 5px;
+	margin-bottom: 9px;
+	border: none;
+	border-top: 1px dotted #222222;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	word-wrap:break-word;
+	word-break: break-all;
+}
+
+pre{
+	margin: none;
+}

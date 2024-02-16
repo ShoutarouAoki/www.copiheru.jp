@@ -1,0 +1,77 @@
+<!-- SlidesJS Optional: If you'd like to use this design -->
+#slides {
+	display: none;
+}
+
+#slides .slidesjs-navigation {
+    margin-top:3px;
+    background-color: rgba(255,255,255,0);
+}
+
+#slides .slidesjs-previous {
+	margin-right: 5px;
+	float: left;
+}
+
+#slides .slidesjs-next {
+	margin-right: 5px;
+	float: left;
+}
+
+.slidesjs-pagination {
+	position:relative;
+	margin: 6px 0 0;
+	float: left;
+	list-style: none;
+	left:50%;
+}
+
+.slidesjs-pagination li {
+	position:relative;
+	float: left;
+	margin: 0 1px;
+	left:-50%;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(/common/css/images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+	transition-duration: 0s;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px;
+	transition-duration: 0s;
+}
+
+.slidesjs-pagination li a:hover {
+	background-position: 0 -13px;
+	transition-duration: 0s;
+}
+
+#slides a:link,
+#slides a:visited {
+	color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+	color: #9e2020
+}
+
+.navbar {
+	overflow: hidden
+}
+
+#frame-indicator-area {
+    background-color: rgba(255,255,255,0);
+}
+
+<!-- End SlidesJS Optional-->

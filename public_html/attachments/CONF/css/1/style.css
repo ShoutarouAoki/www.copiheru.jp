@@ -1,0 +1,59 @@
+<!--
+
+/*=======================================================
+==
+==	style.css
+==	-----------------------------------------------------
+==	サイト毎切り替え、追加用
+==
+========================================================*/
+
+body {
+    background-color: #E7F7DB;
+	color: #333333;
+}
+
+#main_header{
+	background-color: #E7F7DB;
+	height: 55px;
+	font-family: "Century Gothic",Verdana,'ヒラギノ角ゴ Pro W3';
+	color: #009966;
+	border-bottom: 5px solid #C5D5B9;
+}
+
+#main_second{
+	background-color: #E7F7DB;
+}
+
+
+/***********************************
+**
+**	FONT STYLE
+**	--------------------------------
+**	フォント設定
+**
+***********************************/
+
+.bold_pink{
+	color: #FF3366;
+	font-weight: bold;
+}
+
+.bold_blue{
+	color: #0099FF;
+	font-weight: bold;
+}
+
+.bold_red{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.bold_green{
+	color: #009933;
+	font-weight: bold;
+}
+
+
+
+-->

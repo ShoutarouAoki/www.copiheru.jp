@@ -1,0 +1,597 @@
+<!--
+
+/*=======================================================
+==
+==	main_center.css
+==	-----------------------------------------------------
+==	centerFrame内コンテンツ用 CSS ファイル
+==
+========================================================*/
+
+
+
+/***********************************
+**
+**	MAIN CENTER
+**
+***********************************/
+
+#main_contents{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mail_contents{
+	background-color: #EFEFEF;
+	margin-left: auto;
+	margin-right: atuo;
+	padding-top: 20px;
+}
+
+#frame_contents{
+	margin-left: auto;
+	margin-right: atuo;
+	padding: 8px;
+}
+
+
+.title_main{
+	background-image: url(../../img/title_square.gif);
+	background-repeat: no-repeat;
+	width: 90%;
+	height: 30px;
+	color: #444444;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+.title_sub{
+	background-image: url(../../img/title_square.gif);
+	background-repeat: no-repeat;
+	width: 90%;
+	height: 23px;
+	color: #444444;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+}
+
+.title_sub div {
+	margin-left: -10px;
+	color: #996633;
+}
+
+.title_sub a {
+	color: #996633;
+	font-size: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+.main_line{
+	background-image: url(../../img/line.gif);
+	background-repeat: repeat-x;
+	width: 90%;
+	height: 3px;
+	font-size: 3px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+
+.title_comment{
+	color: #FF0000;
+	margin-left: 30px;
+}
+
+
+
+
+/***********************************
+**
+**	TABLE FRAME
+**	--------------------------------
+**	BOX内 TABLE設定
+**
+***********************************/
+
+.table_box{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding: 5px;
+	border: none;
+}
+
+.table_frame{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	padding: 0px;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+}
+
+.table_title{
+	background-image: url(../../img/table_title.jpg);
+	background-repeat: repeat-x;
+	background-color: #888888;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #999999;
+}
+
+
+.table_title_blue{
+	background-image: url(../../img/table_title_blue.jpg);
+	background-repeat: repeat-x;
+	background-color: #99FFFF;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+}
+
+.table_title_pink{
+	background-image: url(../../img/table_title_pink.jpg);
+	background-repeat: repeat-x;
+	background-color: #FFCCFF;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+}
+
+.table_title_sub{
+	background-color: #999999;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #999999;
+}
+
+.table_check{
+	width: 20px;
+	text-align: center;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.table_contents{
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.table_contents_small{
+	background-color: #FFFFFF;
+	font-size: 10px;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.table_contents_center{
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.table_under_button{
+	background-image: url(../../img/button_mail_under.gif);
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 18px;
+	text-align: center;
+	margin-top: -25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	padding-top: 2px;
+	border: none;
+}
+
+#images img{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/***********************************
+**
+**	返信画面 ログ系小窓
+**
+***********************************/
+
+/* USER DATA */
+.mail_user_frame{
+	width: 100%;
+	height: 256px;
+	overflow: auto;
+}
+
+.window_frame{
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	padding: 0px;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.window_title{
+	background-color: #888888;
+	color: #FFFFFF;
+	font-size: 9px;
+	text-align: left;
+	padding: 2px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.window_contents{
+	background-color: #FFFFFF;
+	font-size: 10px;
+	text-align: left;
+	vertical-align: top;
+	padding: 2px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+/* LOG DATA */
+.log_frame{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.send_log_frame{
+	color: #006666;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.recv_log_frame{
+	color: #FF3366;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.send_log_title{
+	background-color: #CCFFFF;
+	color: #006666;
+	margin-bottom: 3px;
+	padding: 1px;
+}
+
+.recv_log_title{
+	background-color: #FFCCFF;
+	color: #FF3366;
+	margin-bottom: 3px;
+	padding: 1px;
+}
+
+.log_delete{
+	background-color: #FF0000;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+
+/***********************************
+**
+**	TABLE FONT / LINK 設定
+**
+***********************************/
+
+.table_title a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/***********************************
+**
+**	OBJ TABLE
+**
+***********************************/
+
+.table_box{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 5px;
+	border: none;
+}
+
+.obj_list{
+	width: 130px;
+	text-align: center;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.obj_title{
+	background-color: #444444;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 3px;
+}
+
+
+/***********************************
+**
+**	DIV in TABLE
+**
+***********************************/
+
+.frame_under_line{
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px dashed #CCCCCC;
+}
+
+
+/***********************************
+**
+**	TABLE FRAME
+**	--------------------------------
+**	BOX内 TABLE設定
+**
+***********************************/
+
+
+.send_user_frame{
+	width: 90%;
+	margin-left: 20px;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+.send_user_contents{
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+.send_user_left{
+	background-color: #EEEEEE;
+	width: 70px;
+	color: #222222;
+	padding: 5px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+.send_user_right{
+	width: 120px;
+	padding: 5px;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+
+/***********************************
+**
+**	MAIL BODY
+**	--------------------------------
+**	MAIL BODY BOX
+**
+***********************************/
+
+#mail_list_body{
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.mail_box{
+	border: 1px solid #CCCCCC;
+}
+
+.mail_header{
+	background-color: #CCCCCC;
+	color: #333333;
+	padding: 3px;
+}
+
+.mail_subject{
+	padding: 3px;
+}
+
+.mail_contents{
+	height:200px;
+	padding: 3px;
+	overflow: auto;
+    scrollbar-base-color: #FFFFFF;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-arrow-color: #CCCCCC;
+    scrollbar-highlight-color: #CCCCCC;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-shadow-color: #CCCCCC;
+    scrollbar-darkshadow-color: #FFFFFF;
+}
+
+.mail_log_body{
+	width: 100%;
+	height: 320px;
+}
+
+.mail_log_frame{
+	width: 90%;
+	height: 256px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 7px;
+	border: 1px solid  #CCCCCC;
+	overflow: auto;
+}
+
+.frame_left{
+	width: 70%;
+	float: left;
+}
+
+.frame_right{
+	width: 25%;
+	text-align: right;
+	float: left;
+}
+
+/***********************************
+**
+**	FRAME HEADER / BODY / FOOTER
+**	--------------------------------
+**	centerFrame内 BOX CLASS
+**
+***********************************/
+
+.frame_body{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: 1px solid #DDDDDD;
+}
+
+.line_frame{
+	background-color: #CCCCCC;
+	text-align: center;
+	padding: 15px;
+}
+
+
+/***********************************
+**
+**	WORK FRAME
+**	--------------------------------
+**	BOX内 UL LIST 設定
+**
+***********************************/
+
+/******** DIV UL LI *********/
+
+.frame_body ul{
+	width: 100%;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #DDDDDD;
+	list-style-type: none;
+	clear: left;
+}
+
+.frame_body ul li{
+	margin-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+	float: left;
+}
+
+.select_left{
+	width: 25%;
+	color: #996633;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.select_right{
+	width: 70%;
+	text-align: left;
+	line-height: 20px;
+}
+
+.select_center{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+/***********************************
+**
+**	FONT STYLE
+**	--------------------------------
+**	フォント設定
+**
+***********************************/
+
+.style_center_small{
+	color: #888888;
+	font-size: 11px;
+}
+
+.style_center_smaller{
+	font-size: 10px;
+}
+
+
+/***********************************
+**
+**	LINK設定
+**
+***********************************/
+
+table_contents_center a span {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+table_contents_center a:hover {
+	color: #009966;
+	text-decoration: none;
+}
+
+table_contents_center a:active {
+	color: #009966;
+	text-decoration: none;
+}
+
+-->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+	<ModulePrefs title="かりへる - にじよめアプリ">
+		<Link rel="event.addapp" href="https://test.kyabaheru.net/connection/add/" method="GET" />
+		<Link rel="event.reserveapp" href="https://test.kyabaheru.net/connection/reserve/" method="GET" />
+		<Link rel="event.removeapp" href="https://test.kyabaheru.net/connection/remove/" method="GET" />
+		<Link rel="event.resumeapp" href="https://test.kyabaheru.net/connection/resume/" method="GET" />
+	</ModulePrefs>
+	<!-- スマートフォン用スタートURL -->
+	<Content view="touch" type="url" href="https://test.kyabaheru.net/" allow_domains="test.kyabaheru.net" />
+	<!-- PC用スタートURL -->
+	<Content view="canvas" type="url" href="https://test.kyabaheru.net/" allow_domains="test.kyabaheru.net" 
+	padding_top="0" padding_bottom="0" /> 
+</Module>

@@ -1,0 +1,143 @@
+/**************************************************
+**
+**	MODAL
+**	-----------------------------------------------
+**	外部モーダルプラグイン上書きスタイルシート
+**
+***************************************************/
+
+
+/* plugin md-modal css 上書き (iOS用) */
+.md-content{
+	background: #FF6699;
+	padding: 5px;
+}
+
+.modal-box{
+	background-image: url(/images/smart/background/background-modal.png);
+	background-repeat: repeat-y;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+	padding-left: 5px;
+	border-radius: 10px;
+}
+
+.modal-title{
+	padding-bottom: 10px;
+}
+
+.modal-title img{
+	width: 100%;
+}
+
+/* モーダル内リスト */
+.modal-list{
+	width: 100%;
+}
+
+.modal-list ul{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	clear: both;
+}
+
+.modal-list li{
+	position: relative;
+	width: 25%;
+	padding-bottom: 15px;
+	float: left;
+}
+
+.modal-list img{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.modal-contents{
+	background-color: #FFFFFF;
+	width: 85%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.modal-line{
+	background-color: #FFFFFF;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.modal-frame{
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 8px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+}
+
+.modal-frame-user-point{
+	background-image: url("/images/icon/icon-gpero.png");
+	background-repeat: no-repeat;
+	-moz-background-size:contain;
+	background-size:contain;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 8px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+}
+
+.modal-frame-free-point{
+	background-image: url("/images/icon/icon-spero.png");
+	background-repeat: no-repeat;
+	-moz-background-size:contain;
+	background-size:contain;
+	background-color: #FFFFFF;
+	padding: 10px;
+	margin-bottom: 8px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+}
+
+.modal-frame-point{
+	padding: 0px 0px 0px 35px;
+}
+
+.modal-frame-text{
+	width: 78%;
+	float: right;
+}
+
+.modal-button{
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px 0px 15px;
+}
+
+.modal-button img{
+	width: 100%;
+}
+
+.modal-under{
+	height: 15px;
+}
+
+#user-point{
+	color: #FF3366;
+	font-weight: bold;
+}
+
+#free-point{
+	color: #0099FF;
+	font-weight: bold;
+}
+
+.modal-icon-frame img {
+    width: 50px;
+    padding: 5px;
+}
+
+

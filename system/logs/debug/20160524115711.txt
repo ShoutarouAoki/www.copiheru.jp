@@ -1,0 +1,33 @@
+2016/05/24 11:57:11	/index.php	[Oauth body ] : {"0":"hogehoge","piyo":"piyopiyo","fruits":["apple","orange","mellon"],"city":{"tokyo":"meguro","osaka":"kyobashi","hukuoka":"hakata"},"huga":[["happy","bad","lucky"],[100,200,400,800]],"game_history":[{"name":"famicon","start":1993,"end":2000},{"name":"playstation","start":2000,"end":2006},{"name":"wii","start":2006,"end":2007}]}
+2016/05/24 11:57:11	/index.php	[Oauth base_string ] : POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&directory%3Dete%26oauth_consumer_key%3Def2fb22e423fef126043685ad41e49%26values%3D
+2016/05/24 11:57:11	/index.php	[Oauth consumer ] : keyOauth Object
+(
+    [key] => ef2fb22e423fef126043685ad41e49
+    [secret] => 7d30992241
+)
+
+2016/05/24 11:57:11	/index.php	[Oauth token ] : 
+2016/05/24 11:57:11	/index.php	[Oauth Key ] : 7d30992241&
+2016/05/24 11:57:11	/index.php	[Oauth Create Signature ] : WaFeE0Vgv9T3XWj4y4KGjkiBzqA=
+2016/05/24 11:57:11	/index.php	[Exec Curl ] : OauthRequest Object
+(
+    [param:protected] => Array
+        (
+            [oauth_consumer_key] => ef2fb22e423fef126043685ad41e49
+            [directory] => ete
+            [values] => 
+            [oauth_signature] => WaFeE0Vgv9T3XWj4y4KGjkiBzqA=
+        )
+
+    [method:protected] => POST
+    [url:protected] => http[s]://spapi.nijiyome.jp/spapi/rest/people
+    [body:protected] => {"0":"hogehoge","piyo":"piyopiyo","fruits":["apple","orange","mellon"],"city":{"tokyo":"meguro","osaka":"kyobashi","hukuoka":"hakata"},"huga":[["happy","bad","lucky"],[100,200,400,800]],"game_history":[{"name":"famicon","start":1993,"end":2000},{"name":"playstation","start":2000,"end":2006},{"name":"wii","start":2006,"end":2007}]}
+    [base_string] => POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&directory%3Dete%26oauth_consumer_key%3Def2fb22e423fef126043685ad41e49%26values%3D
+)
+
+2016/05/24 11:57:11	/index.php	[Chack auth_header ] : Array
+(
+    [0] => Authorization: OAuth , oauth_consumer_key="ef2fb22e423fef126043685ad41e49", oauth_signature="WaFeE0Vgv9T3XWj4y4KGjkiBzqA="
+    [1] => Content-Type: application/json
+)
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="build pneuma" default="exec">
+
+    <property name="src" location="./src/parapara.js"/>
+    <property name="dist" location="./dist/parapara.min.js"/>
+    <property name="jar" location="./compiler-latest/compiler.jar"/>
+
+    <target name="exec">
+        <java jar="${jar}" fork="true">
+            <arg value="--js"/>
+            <arg value="${src}"/>
+            <arg value="--js_output_file"/>
+            <arg value="${dist}"/>
+        </java>
+    </target>
+
+</project>

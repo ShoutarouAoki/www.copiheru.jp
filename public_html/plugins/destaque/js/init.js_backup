@@ -1,0 +1,33 @@
+$(function () {
+
+  $("#slide-container").destaque({
+    slideMovement: 100,
+    slideSpeed: 1000,
+    easingType: "easeInOutQuart",
+    itemSelector: ".item",
+    itemBackgroundSelector: ".background",
+    elementSpeed: 1100,
+    itemForegroundElementSelector: ".foreground .element",
+    controlsSelector: "#slide-pagination a",
+	onPageUpdate: function(destaque, pageData) {
+		setTimeout(function(){
+		$(".pagination .bullet").removeClass("active");
+		$(".pagination .bullet[rel='"+ pageData.currentSlide +"']").addClass("active");
+		},700);
+	}
+  });
+
+  $('.triple-slides').destaquesQueue({
+    slideMovement: 40,
+    delay: 250,
+    easingType: "easeInOutQuart",
+    itemBackgroundSelector: ".background"
+  });
+
+  $(".pagination .bullet").click(function(e) {
+    e.preventDefault();
+    destaque.goTo(parseInt($(this).attr("rel"), 10));
+    });
+  });
+
+});

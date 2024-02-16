@@ -1,0 +1,48 @@
+/**************************************************
+**
+**	BASE
+**	-----------------------------------------------
+**	SITE BASE SETTING
+**
+***************************************************/
+
+
+/**************************************************
+**
+**	BODY
+**
+***************************************************/
+
+/* BODY */
+body{
+	background-image: url("/images/smart/background/background-main.png");
+	background-repeat: repeat;
+	font-family:"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 14px;
+	color: #222222;
+	line-height: 140%;
+	margin: 0px;
+	padding: 0px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+html {
+	margin: 0px;
+	padding: 0px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#maintenance{
+	background-image: url("/images/smart/background/background-white.png");
+	background-repeart: repeart;
+	width: 320px;
+	text-align: center;
+	padding: 10px;
+	margin: 15px auto 15px;
+	border-radius: 10px;
+}
+
+
+

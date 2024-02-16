@@ -1,0 +1,40 @@
+2016/05/24 11:34:13	/index.php	[Oauth body ] : {"0":"hogehoge","piyo":"piyopiyo","fruits":["apple","orange","mellon"],"city":{"tokyo":"meguro","osaka":"kyobashi","hukuoka":"hakata"},"huga":[["happy","bad","lucky"],[100,200,400,800]],"game_history":[{"name":"famicon","start":1993,"end":2000},{"name":"playstation","start":2000,"end":2006},{"name":"wii","start":2006,"end":2007}]}
+2016/05/24 11:34:13	/index.php	[Oauth base_string ] : POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&oauth_consumer_key%3Def2fb22e423fef126043685ad41e49%26oauth_nonce%3Dfddceef980af9bf87691168da3f3da0b%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1464053879%26oauth_token%3Da2535a6c7d4980f83bc3%26oauth_token_secret%3D01bc773d72%26oauth_version%3D1.0%26opensocial_app_id%3D445%26opensocial_owner_id%3D3962%26opensocial_viewer_id%3D3962
+2016/05/24 11:34:13	/index.php	[Oauth consumer ] : keyOauth Object
+(
+    [key] => ef2fb22e423fef126043685ad41e49
+    [secret] => 7d30992241
+)
+
+2016/05/24 11:34:13	/index.php	[Oauth token ] : 
+2016/05/24 11:34:13	/index.php	[Oauth Key ] : 7d30992241&
+2016/05/24 11:34:13	/index.php	[Oauth Create Signature ] : kzl7bWrDu5QQAqoEsXhDzUS2R0U=
+2016/05/24 11:34:13	/index.php	[Exec Curl ] : OauthRequest Object
+(
+    [param:protected] => Array
+        (
+            [oauth_consumer_key] => ef2fb22e423fef126043685ad41e49
+            [oauth_nonce] => fddceef980af9bf87691168da3f3da0b
+            [oauth_signature_method] => HMAC-SHA1
+            [oauth_timestamp] => 1464053879
+            [oauth_token] => a2535a6c7d4980f83bc3
+            [oauth_token_secret] => 01bc773d72
+            [oauth_version] => 1.0
+            [opensocial_app_id] => 445
+            [opensocial_owner_id] => 3962
+            [opensocial_viewer_id] => 3962
+            [oauth_signature] => kzl7bWrDu5QQAqoEsXhDzUS2R0U=
+        )
+
+    [method:protected] => POST
+    [url:protected] => http[s]://spapi.nijiyome.jp/spapi/rest/people
+    [body:protected] => {"0":"hogehoge","piyo":"piyopiyo","fruits":["apple","orange","mellon"],"city":{"tokyo":"meguro","osaka":"kyobashi","hukuoka":"hakata"},"huga":[["happy","bad","lucky"],[100,200,400,800]],"game_history":[{"name":"famicon","start":1993,"end":2000},{"name":"playstation","start":2000,"end":2006},{"name":"wii","start":2006,"end":2007}]}
+    [base_string] => POST&http%3A%2F%2Fhttp%5Bs%5D%3A%2F%2Fspapi.nijiyome.jp%2Fspapi%2Frest%2Fpeople&oauth_consumer_key%3Def2fb22e423fef126043685ad41e49%26oauth_nonce%3Dfddceef980af9bf87691168da3f3da0b%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1464053879%26oauth_token%3Da2535a6c7d4980f83bc3%26oauth_token_secret%3D01bc773d72%26oauth_version%3D1.0%26opensocial_app_id%3D445%26opensocial_owner_id%3D3962%26opensocial_viewer_id%3D3962
+)
+
+2016/05/24 11:34:13	/index.php	[Chack auth_header ] : Array
+(
+    [0] => Authorization: OAuth , oauth_consumer_key="ef2fb22e423fef126043685ad41e49", oauth_nonce="fddceef980af9bf87691168da3f3da0b", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1464053879", oauth_token="a2535a6c7d4980f83bc3", oauth_token_secret="01bc773d72", oauth_version="1.0", oauth_signature="kzl7bWrDu5QQAqoEsXhDzUS2R0U="
+    [1] => Content-Type: application/json
+)
+

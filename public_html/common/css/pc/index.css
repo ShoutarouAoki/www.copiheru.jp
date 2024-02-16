@@ -1,0 +1,40 @@
+/**************************************************
+**
+**	INDEX
+**	-----------------------------------------------
+**	SITE BASE SETTING
+**
+***************************************************/
+
+/*
+上書き
+*/
+
+/* NAVIGATION AREA */
+#navigationArea{
+	width: 0px;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	display: none;
+}
+
+/* MAIN AREA */
+#mainArea{
+	width: 830px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0px;
+	border: none;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all;
+	float: none;
+}
+
+#container{
+	width: 500px;
+	margin: 0 auto;
+}
+

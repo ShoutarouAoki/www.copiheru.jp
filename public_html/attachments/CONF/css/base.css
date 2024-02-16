@@ -1,0 +1,468 @@
+<!--
+
+/*=======================================================
+==
+==	bace.css
+==	-----------------------------------------------------
+==	body / html 等各フレーム内全てで仕様する ID CLASS群
+==
+========================================================*/
+
+/**************************************
+**
+**	BODY	HTML基本設定CSS
+**
+**************************************/
+
+body {
+    background-color: #E7F7DB;
+	font-size: 12px;
+	font-family : sans-serif;
+	color: #555555;
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body{
+    scrollbar-base-color: #FFFFFF;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-arrow-color: #BBBBBB;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-shadow-color: #BBBBBB;
+    scrollbar-darkshadow-color: #FFFFFF;
+}
+
+form{
+    display: inline;
+}
+
+
+
+/***********************************
+**
+**	UL LI CLASS設定
+**	--------------------------------
+**	list styleを破棄
+**
+***********************************/
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+
+/***********************************
+**
+**	FLOAT設定
+**	--------------------------------
+**	簡易float設定
+**
+***********************************/
+
+.column_2float{
+	width: 50%;
+	float: left;
+}
+
+.column_2float_right{
+	width: 50%;
+	text-align: right;
+	float: left;
+}
+
+.column_3float{
+	width: 33%;
+	float: left;
+}
+
+.column_3float_right{
+	width: 33%;
+	text-align: right;
+	float: left;
+}
+
+.column_2float_right a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.column_2float_right a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.column_2float_right a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.column_2float_right a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+/***********************************
+**
+**	DISPLAY CONTROLL
+**
+***********************************/
+
+.display_fade{
+	display: none;
+}
+
+
+
+/***********************************
+**
+**	INPUT TAG CLASS
+**
+***********************************/
+
+.submit{
+	background-color: #FFFFFF;
+	color: #444444;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1px;
+	border: 3px double;
+	border-color: #BBBBBB;
+}
+
+.button{
+	background-color: #FFFFFF;
+	color: #444444;
+	font-size: 11px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1px;
+	border: 3px double;
+	border-color: #BBBBBB;
+}
+
+.text_year{
+	width: 35px;
+	ime-mode: disabled;
+}
+
+.text_month{
+	width: 20px;
+	ime-mode: disabled;
+}
+
+.text_num{
+	ime-mode: disabled;
+}
+
+input[type="text"]{
+	font-size: 11px;
+	font-family : sans-serif;
+	margin-top: 2px;
+	margin-top: 2px;
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+}
+
+input[type="password"]{
+	font-size: 11px;
+	font-family : sans-serif;
+	margin-top: 2px;
+	margin-top: 2px;
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+}
+
+input[type="file"]{
+	font-size: 12px;
+	font-family : sans-serif;
+	margin-top: 2px;
+	margin-top: 2px;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+}
+
+select{
+	color: #555555;
+	font-size: 12px;
+	font-family : sans-serif;
+	border: 1px solid #CCCCCC;
+}
+
+/***********************************
+**
+**	HR TAG CLASS
+**
+***********************************/
+
+.hr_solid{
+	height: 0px;
+	border: none;
+	border-top: 1px solid #666666;
+}
+
+.hr_dashed{
+	height: 0px;
+	border: none;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border_top-color: #EFEFEF;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.over_line{
+	background-image: url(../../img/line.gif);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 3px;
+	font-size: 3px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+
+/***********************************
+**
+**	FLOAT CLEAR
+**
+***********************************/
+
+.clear_left{
+	clear: left;
+}
+
+
+
+/***********************************
+**
+**	基本FONT設定
+**
+***********************************/
+
+# LARGE
+.style_large_green{
+	color: #339966;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.style_large_pink{
+	color: #FF3366;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.style_large_red{
+	color: #FF0000;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.style_large_blue{
+	color: #009966;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+# NORMAL
+.style_green{
+	color: #339966;
+}
+
+.style_pink{
+	color: #FF3366;
+}
+
+.style_blue{
+	color: #009966;
+}
+
+.style_red{
+	color: #FF0000;
+}
+
+.style_yellow{
+	color: #FFFF99;
+}
+
+.style_black{
+	color: #000000;
+}
+
+.style_purple{
+	color: #996666;
+}
+
+.style_brown{
+	color: #996633;
+}
+
+# LOGS
+.log_recv{
+	color: #FF0000;
+}
+
+.log_send{
+	color: #006666;
+}
+
+/* COUNT */
+
+.style_count{
+	color: #222222;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.style_total_count{
+	color: #999999;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/***********************************
+**
+**	基本LINK設定
+**
+***********************************/
+
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF3366;
+	text-decoration: none;
+}
+
+a:active {
+	color: #990000;
+	text-decoration: none;
+}
+
+.red a:link {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.red a:visited {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.red a:hover {
+	color: #009966;
+	text-decoration: none;
+}
+
+.red a:active {
+	color: #990000;
+	text-decoration: none;
+}
+
+/***********************************
+**
+**	SEND CONTENTS
+**
+***********************************/
+
+#exe_contents{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 35px;
+	line-height: 25px;
+}
+
+#exe_contents p{
+    background-color: #E7F7DB;
+	width: 500px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+#exe_contents div{
+    background-color: #FFFFFF;
+	width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	border: 1px solid #CCCCCC;
+	word-wrap: break-word;
+}
+
+
+/***********************************
+**
+**	ERROR CONTENTS
+**
+***********************************/
+
+#error_contents{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 35px;
+	line-height: 25px;
+}
+
+#error_contents p{
+	background-color: #333333;
+	width: 500px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 5px;
+	word-wrap: break-word;
+
+}
+
+#error_contents div{
+    background-color: #FFFFFF;
+	width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+	border: 1px solid #CCCCCC;
+	word-wrap: break-word;
+}
+
+-->

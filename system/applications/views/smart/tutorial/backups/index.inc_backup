@@ -1,0 +1,124 @@
+<?php
+/****************************
+**
+**	fullPage.js plugin
+**
+*****************************/
+?>
+<link rel="stylesheet" href="/plugins/fullPage-master/jquery.fullPage.css" />
+<script src="/plugins/fullPage-master/vendors/jquery.easings.min.js"></script>
+<script src="/plugins/fullPage-master/jquery.fullPage.min.js"></script>
+
+
+<?php
+/****************************
+**
+**	このページでのスクリプト
+**
+*****************************/
+?>
+<script src="/common/js/tutorial.script.js"></script>
+<script src="/common/js/tutorial.function.js"></script>
+
+<?php
+/****************************
+**
+**	このページはこのcssでデザインしてるよ
+**
+*****************************/
+?>
+<link rel="stylesheet" href="/common/css/smart/tutorial.css" />
+
+
+<script type="text/javascript">
+
+	message_max_length		= <?php print(PROFILE_MESSAGE_MAX_LENGTH); ?>;
+
+	constructDefine(message_max_length);
+
+	(function($) {
+		$(function() {
+			$('#fullpage').fullpage({
+				resize : false,
+				loopHorizontal : false,
+				scrollBar: true
+			});
+		});
+	})(jQuery);
+
+</script>
+
+<?php /* CONTAINER */ ?>
+<div id="container">
+<?php /* CONTAINER */ ?>
+
+	<div id="tutorial-area">
+
+		<div id="fullpage">
+			<section class="section">
+
+				<?php
+				$count		= 0;
+				$count		= count($image_list['id']);
+				for($i=0;$i<$count;$i++){
+				?>
+				<div class="slide" data-anchor="slide1">
+					<div class="panel">
+					    <img src="<?php print(HTTP_WEB_IMAGE); ?>/<?php print($image_list['image'][$i]); ?>" />
+					</div>
+				</div>
+				<?php } ?>
+
+				<div class="slide" data-anchor="slide4">
+					<div class="panel">
+					    <div class="profile-title"><img src="/images/smart/title/title-profile.png" /></div>
+					    <div id="form">
+							<ul>
+
+								<li>
+									<p>ニックネーム<span class="style-red">＊</span></p>
+									<label><input type="text" name="nickname" id="nickname" /></label>
+								</li>
+
+								<li>
+									<p>誕生日<span class="style-red">＊</span></p>
+									<div class="month-day-select">
+										<label>
+											<select name="month" id="month">
+												<?php print($month_option); ?>
+											</select>
+										</label>
+									</div>
+									<div class="month-day-select">
+										<label>
+											<select name="day" id="day">
+												<?php print($day_option); ?>
+											</select>
+										</label>
+									</div>
+									<div class="clear"></div>
+								</li>
+
+								<li>
+									<p>自己紹介<span>(<?php print(PROFILE_MESSAGE_MAX_LENGTH); ?>文字まで)</span></p>
+									<textarea name="message" id="message" maxlength="<?php print(PROFILE_MESSAGE_MAX_LENGTH); ?>"></textarea>
+									<div class="form-comment">残り文字数 <span id="text-length"><?php print(PROFILE_MESSAGE_MAX_LENGTH); ?></span> 文字</div>
+								</li>
+
+								<li><div id="send" class="image-center"><a href="javascript:void(0)"><img src="/images/smart/button/button-profile-edit.png" style="width: 250px;" /></a></div></li>
+								<div class="return-top"><a href="#top"><img src="/images/smart/return.png" style="width: 30px;" /></a></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+	</div>
+
+
+<?php /* CONTAINER */ ?>
+</div>
+<?php /* CONTAINER */ ?>
+

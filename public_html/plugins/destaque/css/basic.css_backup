@@ -1,0 +1,180 @@
+#slide-container, #multiple-slide-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 940px;
+  height: 300px;
+}
+
+.item, .item-triple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.foreground {
+  position: absolute;
+}
+
+.background {
+  position: absolute;
+  overflow: hidden;
+}
+
+#slide-container {
+  background-color: #fff;
+ /*  border: 1px solid #000; */
+}
+
+.item a, .item-triple a {
+  display: block;
+  width: 940px;
+  height: 300px;
+}
+
+.item .background img {
+  max-width: 940px; /* to avoid max-width: 100% of Twitter Bootstrap */
+}
+
+.item-triple .background img {
+  max-width: 320px; /* to avoid max-width: 100% of Twitter Bootstrap */
+}
+
+.foreground .element, .foreground-triple .element {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000000;
+  width: 750px;
+  position: relative;
+  left: 70px;
+}
+
+.foreground .element.icon, .foreground-triple .element.icon {
+  top: 180px;
+  left: 20px;
+  width: 114px;
+  height: 114px;
+  background: transparent url(../images/play.png) no-repeat;
+  background-position: 0 0;
+}
+
+/* SHADOW */
+.background .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(40%, rgba(0, 0, 0, 0.8)));
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 40%);
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 40%);
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 40%);
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 40%);
+  background: linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 40%);
+}
+
+/*
+.background .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+
+}
+*/
+
+.foreground .element.title, .foreground-triple .element.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  top: 105px;
+  color: #FFFF33;
+}
+
+.foreground .element.subtitle {
+  font-size: 17px;
+  top: 120px;
+}
+
+.ui-loader {
+  display: none;
+}
+
+#multiple-slide-container .triple-slides {
+  width: 320px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+#multiple-slide-container .triple-slides .foreground-triple .element.title {
+  font-size: 28px;
+}
+
+#multiple-slide-container .triple-slides .item-triple a {
+  width: 320px;
+  height: 300px;
+}
+
+#slide-pagination{
+	margin: 0px;
+	float: right;
+}
+
+#slide-container a:hover img{
+	filter: alpha(opacity=100);
+	-moz-opacity:1;
+	opacity:1;
+}
+
+/*
+#prev-navigation{
+	position: relative;
+	margin-top: -30px;
+	padding-right: 15px;
+	float: right;
+}
+*/
+
+#prev-navigation{
+	position: relative;
+	width: 940px;
+	height: 12px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pagination{
+	position: absolute;
+	z-index: 9999;
+    top: 0;
+    right: 0%;
+}
+
+.pagination li {
+	width :12px;
+	float: left;
+	margin:0 1px;
+	list-style: none;
+	border: none;
+}
+
+.pagination li .bullet {
+	display:block;
+	width :12px;
+	height:0 !important;
+	padding-top: 12px;
+	background-image: url(../images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.pagination li .active {
+	background-position:0 -12px;
+	border: none;
+}
